@@ -15,6 +15,7 @@
 		6D9374BA1C900183006B5095 /* CircleLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9374B91C900183006B5095 /* CircleLayoutTests.swift */; };
 		6D9374C51C900183006B5095 /* CircleLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9374C41C900183006B5095 /* CircleLayoutUITests.swift */; };
 		6D9374D31C9001BE006B5095 /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9374D21C9001BE006B5095 /* CircleLayout.swift */; };
+		6D9374D51C9016C1006B5095 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9374D41C9016C1006B5095 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6D9374C41C900183006B5095 /* CircleLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLayoutUITests.swift; sourceTree = "<group>"; };
 		6D9374C61C900183006B5095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D9374D21C9001BE006B5095 /* CircleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
+		6D9374D41C9016C1006B5095 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				6D9374A41C900182006B5095 /* AppDelegate.swift */,
 				6D9374A61C900182006B5095 /* ViewController.swift */,
 				6D9374D21C9001BE006B5095 /* CircleLayout.swift */,
+				6D9374D41C9016C1006B5095 /* Cell.swift */,
 				6D9374A81C900182006B5095 /* Main.storyboard */,
 				6D9374AB1C900182006B5095 /* Assets.xcassets */,
 				6D9374AD1C900182006B5095 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D9374A71C900182006B5095 /* ViewController.swift in Sources */,
+				6D9374D51C9016C1006B5095 /* Cell.swift in Sources */,
 				6D9374D31C9001BE006B5095 /* CircleLayout.swift in Sources */,
 				6D9374A51C900182006B5095 /* AppDelegate.swift in Sources */,
 			);
@@ -491,6 +495,7 @@
 				6D9374CB1C900183006B5095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D9374CC1C900183006B5095 /* Build configuration list for PBXNativeTarget "CircleLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				6D9374CE1C900183006B5095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D9374CF1C900183006B5095 /* Build configuration list for PBXNativeTarget "CircleLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				6D9374D11C900183006B5095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
