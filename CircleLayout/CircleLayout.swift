@@ -36,8 +36,8 @@ class CircleLayout: UICollectionViewLayout {
         let attributes = UICollectionViewLayoutAttributes.init(forCellWithIndexPath: indexPath)
         attributes.size = CGSize(width: ITEM_SIZE, height: ITEM_SIZE)
         attributes.center = CGPoint(
-            x: center.x + CGFloat(cosf(Float(2 * indexPath.item) * Float(M_PI) / Float(cellCount))),
-            y: center.y + CGFloat(sinf(Float(2 * indexPath.item) * Float(M_PI) / Float(cellCount))))
+            x: center.x + radius * CGFloat(cosf(Float(2 * indexPath.item) * Float(M_PI) / Float(cellCount))),
+            y: center.y + radius * CGFloat(sinf(Float(2 * indexPath.item) * Float(M_PI) / Float(cellCount))))
         return attributes
     }
     /**
@@ -95,12 +95,14 @@ class CircleLayout: UICollectionViewLayout {
         // 添加消失动画
         var attributes = super.finalLayoutAttributesForDisappearingItemAtIndexPath(itemIndexPath)
         
-        if attributes != nil {
-            attributes = layoutAttributesForItemAtIndexPath(itemIndexPath)
-            
-            attributes?.alpha = 0.0
-            attributes?.center = CGPointMake(center.x, center.y)
-            attributes?.transform3D = CATransform3DMakeScale(0.1, 0.1, 1.0)
+        if deleteIndexPaths!.contains(itemIndexPath) {
+            if attributes != nil {
+                attributes = layoutAttributesForItemAtIndexPath(itemIndexPath)
+                
+                attributes?.alpha = 0.0
+                attributes?.center = CGPointMake(center.x, center.y)
+                attributes?.transform3D = CATransform3DMakeScale(0.1, 0.1, 1.0)
+            }
         }
         
         return attributes
